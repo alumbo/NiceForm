@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width, shrink-to-fit=no" />
+
+  <title>NiceForm</title>
+
+  <link rel="stylesheet" href="css/nice-form.css">
+  <style>
+    body {
+      margin: 2em;
+      text-align: center;
+    }
+    h1 {
+      padding: 2em;
+    }
+    body, input, select {
+      font-family: Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <h1>NiceForm</h1>
+    <form>
+      <div class="select">
+        <select name="gender">
+          <option>Gender</option>
+          <option>Female</option>
+          <option>Male</option>
+        </select>
+      </div>
+      <div class="input">
+        <input type="text" placeholder="Firstname" required/>
+      </div>
+      <div class="input">
+        <input type="text" placeholder="Lastname" required/>
+      </div>
+      <div class="input">
+        <input type="text" placeholder="Email address" required/>
+      </div>
+      <div class="input">
+        <input type="password" placeholder="Password" required/>
+      </div>
+      <div class="input">
+        <input type="password" placeholder="Confirm Password" required/>
+      </div>
+      <input type="submit" value="Submit"/>
+    </form>
+  </article>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/NiceForm.js"></script>
+</body>
+</html>

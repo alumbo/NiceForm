@@ -1,0 +1,79 @@
+@import "reset";
+.input, .select {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 1em;
+}
+.input {
+    &::before {
+        content: attr(data-label-content);
+        position: absolute;
+        left: 15px;
+        top: 8px;
+        color: #6c7376;
+        font-size: 12px;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity .2s;
+    }
+    &.has-focus {
+        &::before {
+            color: #0070ba;
+        }
+    }
+    &.has-content{
+        &::before {
+            opacity: 1;
+        }
+        input {
+            padding: 20px 15px 10px;
+        } 
+    }
+}
+.select {
+    &:after, &:before {
+        position: absolute;
+        top: 50%;
+        width: 10px;
+        content: ' ';
+        border-top: 1px solid #000;
+    }
+    &:before {
+        transform: rotate(45deg);
+        right: 20px;
+    }
+    &:after {
+        transform: rotate(-45deg);
+        right: 13px;
+    }
+}
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    box-sizing: border-box;
+    transition: padding .2s;
+    padding: 15px;
+    border: 1px solid #9da3a6;
+    border-radius: 5px;
+    font-size: 15px;
+}
+select {
+    height: 50px;
+    background-color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+}
+button, input[type="submit"] {
+    padding: 11px 30px;
+    font-size: 18px;
+    transition: all .1s;
+    border-radius: 4px;
+    background: #0070ba;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
+    &:hover {
+        background: #0093fb;
+    }
+}

@@ -1,0 +1,112 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.input, .select {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 1em; }
+
+.input::before {
+  content: attr(data-label-content);
+  position: absolute;
+  left: 15px;
+  top: 8px;
+  color: #6c7376;
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity .2s; }
+.input.has-focus::before {
+  color: #0070ba; }
+.input.has-content::before {
+  opacity: 1; }
+.input.has-content input {
+  padding: 20px 15px 10px; }
+
+.select:after, .select:before {
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  content: ' ';
+  border-top: 1px solid #000; }
+.select:before {
+  transform: rotate(45deg);
+  right: 20px; }
+.select:after {
+  transform: rotate(-45deg);
+  right: 13px; }
+
+input[type="text"], input[type="password"], select {
+  width: 100%;
+  box-sizing: border-box;
+  transition: padding .2s;
+  padding: 15px;
+  border: 1px solid #9da3a6;
+  border-radius: 5px;
+  font-size: 15px; }
+
+select {
+  height: 50px;
+  background-color: #fff;
+  appearance: none;
+  -webkit-appearance: none; }
+
+button, input[type="submit"] {
+  padding: 11px 30px;
+  font-size: 18px;
+  transition: all .1s;
+  border-radius: 4px;
+  background: #0070ba;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all .2s; }
+  button:hover, input[type="submit"]:hover {
+    background: #0093fb; }
+
+/*# sourceMappingURL=nice-form.css.map */
