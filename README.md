@@ -9,4 +9,4 @@ Chrome 42+, Firefox 45+, Safari 9+, Microsoft Edge
 
 <h2>Screenshot (sample.html)</h2>
 
-![Screenshot](https://raw.githubusercontent.com/alumbo/NiceForm/master/screen.png)
+![Screenshot](https://raw.githubusercontent.com/alumbo/NiceForm/master/screen.png?2)
